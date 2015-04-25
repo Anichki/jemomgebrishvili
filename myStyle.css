@@ -1,0 +1,121 @@
+
+* {
+	margin: 0 auto;
+}
+
+#container {
+	margin-top: 10px;
+
+	width: 400px;
+	height: 670px;
+	background-color: black;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	/*background-color: red;*/
+}
+header {
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 30px;
+	background-color: black;
+	/*background-image: url(main3.png);*/	
+}
+
+#app-title {
+	float: left;
+	height: 30px;
+	width: 100%;
+	/*background-color: black;	*/
+}
+#h2_for_title {
+	color: white;
+	text-align: center;
+}
+
+main {
+	float: left;
+	width: 380px;
+	height: 550px;
+	margin-left: 10px;
+	background-color: green;
+}
+
+main nav ul li {
+	display: inline;
+	height: 60px;
+	width: 100%;
+	background-color: black;
+	margin-left: -20px;
+	float: left;
+	text-align: center;
+	clear: both;
+	color: white;
+	float: left;
+	margin-top: 2px;
+}
+main nav {
+	margin-top: 80px;
+}
+main nav ul li:hover {
+	background-color: gray;
+}
+main nav ul a{
+	text-decoration: none;
+	margin-left: 30%;
+}
+.menu1 a{
+	margin-left: 0px;
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 27px;
+	width: 100%;
+}
+.menu1 a:hover {
+	background-color: gray;
+}
+
+
+#transport-info {
+	height: 130px;
+	width: 100%;
+	float: left;
+	background-color: #c9fad6;
+}
+#transport-info h3 {
+	text-align: center;
+}
+
+#map-space {
+	background-image: url(map.JPG);
+	height: 550px;
+	width: 100%;
+}
+#transport-img {
+	float: left;
+	height: 50px;
+	width: 50px;
+}
+#transport-img img{
+	border: 2px solid;
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#info-text {
+	float: left;
+	margin-left: 100px;
+	margin-top: -55px;	
+}
+#line {
+	height: 5px;
+	width: 100%;
+	background-color: black;
+	float: left;
+}
