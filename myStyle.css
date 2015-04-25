@@ -27,16 +27,28 @@ header {
 }
 
 #app-title {
-	float: left;
+	/* float: left; აქ შეგიძლია float აღარც დაწერო, რადგან ისედაც მშობელი დივის განს
+	აიღებს და ისედაც ისეთი განლაგება ექნება, როგორიც გინდა */
 	height: 30px;
-	width: 100%;
+	/*width: 100%; ესეც შეგიძია აღარ დაწერო, რადგან div ისედაც დეფაულთათ,
+	bock ელემენტია და მთლიან სივრცეს დაიკავებს განში */ 
 	/*background-color: black;	*/
 }
 #h2_for_title {
 	color: white;
 	text-align: center;
 }
-
+/* ან ასე, რახან id გაქვს გამოყეებული იგულისხმება, რომ მეტი id ამ გვერძე აღარ იქნება 
+და შეგძლია h3-სთვის ატრიბუტი აღარ გამოიყენო და პირდაპირ დაუწერო #app-title-ის h3 */
+#app-title h3 {
+	color: white;
+	text-align: center;
+}
+/* ან ასე (ეს უკვე გემოვნების ამბავია)*/
+#app-title > h3 { /* #app-title-ის შვილი(>) h3 */
+	color: white;
+	text-align: center;
+}
 main {
 	float: left;
 	width: 380px;
