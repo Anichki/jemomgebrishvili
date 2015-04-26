@@ -95,22 +95,33 @@ main nav ul a{
 #transport-info {
 	height: 130px;
 	width: 100%;
-	float: left;
-	background-color: #c9fad6;
+	float: left; /* არ არის საჭირო, სწორედ float-ს, როდესაც ხმარობ ამოაგდებს 
+	ნორმალური დინებიდან ელემენტებს, რომელიც გამოყენებული გაქვს */
+	background-color: #c9fad6; /* დროებით მოხსენი ეს ფერი და  ნახავ 
+	სად არის განთავსებული იმიჯი და float-ს რომ მოხსნი მერე რა ხდება */
+	border-bottom: 4px solid black;
 }
 #transport-info h3 {
 	text-align: center;
 }
 
 #map-space {
-	background-image: url(map.JPG);
+	background-image: url(map.JPG); /* defaul-თათ როდესაც იმიჯი არ არის 
+	ზუსტად იგივე ზომის repeat-ს აკეთებს, რომელიც უნდა მოხსნა */
 	height: 550px;
 	width: 100%;
 }
-#transport-img {
+/*#transport-img {
 	float: left;
 	height: 50px;
 	width: 50px;
+}*/
+#transport-img {
+	/* height: 50px;
+	width: 50px; */ /* მოვხსენი, რადგან ამ div-შივე გიზის ტექსტიც და თან გინდა გვერდზე 
+	განთავსდეს, ამდროს დაწერე რომ 50px განში ჩაეტიოს */
+	display: inline-block; /* რადგან div დეფაულტათ block ელემენტია, და ვერტიკალურად 
+	მთელ სივრცეს იკავებს */
 }
 #transport-img img{
 	border: 2px solid;
@@ -120,14 +131,21 @@ main nav ul a{
 	margin-top: 5px;
 	margin-left: 5px;
 }
-#info-text {
+/* #info-text {
 	float: left;
 	margin-left: 100px;
 	margin-top: -55px;	
+} */
+#transport-info p { /* ესეც შეგიძლია ასე მიყთითო, #transport-info-ს p თაგს 
+	გინდა მარტო შეეხხოს ეს სტილი */
+		display: inline-block;
+	margin: 10px;
+	width: 80px; /* თუ კონკრეტულ განში გინდა რომ იყოს განთავსებული */
 }
-#line {
-	height: 5px;
+span {
+	/* height: 5px;
 	width: 100%;
 	background-color: black;
 	float: left;
+	display: block; */
 }
