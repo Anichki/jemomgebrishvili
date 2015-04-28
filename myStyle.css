@@ -8,6 +8,8 @@
 
 	width: 400px;
 	height: 670px;
+	background-image: url(main.png);
+	background-repeat: no-repeat;
 	background-color: black;
 	/*border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
