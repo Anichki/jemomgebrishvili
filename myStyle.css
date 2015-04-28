@@ -9,20 +9,20 @@
 	width: 400px;
 	height: 670px;
 	background-color: black;
-	border-top-right-radius: 30px;
+	/*border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
-	/*background-color: red;*/
+	background-color: red;*/
 }
 header {
-	border-top-right-radius: 30px;
-	border-top-left-radius: 30px;
+	/*border-top-right-radius: 30px;
+	border-top-left-radius: 30px;*/
 	float: left;
 	width: 100%;
 	height: 30px;
 	margin-top: 30px;
-	background-color: black;
+	background-color: red;
 	/*background-image: url(main3.png);*/	
 }
 
@@ -34,10 +34,10 @@ header {
 	bock ელემენტია და მთლიან სივრცეს დაიკავებს განში */ 
 	/*background-color: black;	*/
 }
-#h2_for_title {
+/*#h2_for_title {
 	color: white;
 	text-align: center;
-}
+} */
 /* ან ასე, რახან id გაქვს გამოყეებული იგულისხმება, რომ მეტი id ამ გვერძე აღარ იქნება 
 და შეგძლია h3-სთვის ატრიბუტი აღარ გამოიყენო და პირდაპირ დაუწერო #app-title-ის h3 */
 #app-title h3 {
@@ -45,15 +45,15 @@ header {
 	text-align: center;
 }
 /* ან ასე (ეს უკვე გემოვნების ამბავია)*/
-#app-title > h3 { /* #app-title-ის შვილი(>) h3 */
+/*#app-title > h3 { /* #app-title-ის შვილი(>) h3 */
 	color: white;
 	text-align: center;
-}
+} */
 main {
 	float: left;
-	width: 380px;
-	height: 550px;
-	margin-left: 10px;
+	width: 285px;
+	height: 472px;
+	margin-left: 17px;
 	background-color: green;
 }
 
@@ -95,11 +95,11 @@ main nav ul a{
 #transport-info {
 	height: 130px;
 	width: 100%;
-	float: left; /* არ არის საჭირო, სწორედ float-ს, როდესაც ხმარობ ამოაგდებს 
+	/*float: left; */ /* არ არის საჭირო, სწორედ float-ს, როდესაც ხმარობ ამოაგდებს 
 	ნორმალური დინებიდან ელემენტებს, რომელიც გამოყენებული გაქვს */
 	background-color: #c9fad6; /* დროებით მოხსენი ეს ფერი და  ნახავ 
 	სად არის განთავსებული იმიჯი და float-ს რომ მოხსნი მერე რა ხდება */
-	border-bottom: 4px solid black;
+	/*border-bottom: 4px solid black; */
 }
 #transport-info h3 {
 	text-align: center;
@@ -120,16 +120,18 @@ main nav ul a{
 	/* height: 50px;
 	width: 50px; */ /* მოვხსენი, რადგან ამ div-შივე გიზის ტექსტიც და თან გინდა გვერდზე 
 	განთავსდეს, ამდროს დაწერე რომ 50px განში ჩაეტიოს */
-	display: inline-block; /* რადგან div დეფაულტათ block ელემენტია, და ვერტიკალურად 
+	/*display: inline-block;  რადგან div დეფაულტათ block ელემენტია, და ვერტიკალურად 
 	მთელ სივრცეს იკავებს */
-}
-#transport-img img{
-	border: 2px solid;
+	margin-left: 5px;
+	margin-top: 5px;
 	height: 50px;
 	width: 50px;
-	float: left;
-	margin-top: 5px;
-	margin-left: 5px;
+	float: left; 
+}
+#transport-img img{
+	border: 1px solid;
+	height: 100%;
+	width: 100%;
 }
 /* #info-text {
 	float: left;
@@ -138,11 +140,14 @@ main nav ul a{
 } */
 #transport-info p { /* ესეც შეგიძლია ასე მიყთითო, #transport-info-ს p თაგს 
 	გინდა მარტო შეეხხოს ეს სტილი */
-		display: inline-block;
-	margin: 10px;
+	/*display: inline-block;
+	margin-left: 10px;
 	width: 80px; /* თუ კონკრეტულ განში გინდა რომ იყოს განთავსებული */
+	margin-top: 5px;
+	float: left; 
+	/*background-color: red;*/
 }
-span {
+span { /* ერთი სპან როცამავს კი შეიძლება :)
 	/* height: 5px;
 	width: 100%;
 	background-color: black;
