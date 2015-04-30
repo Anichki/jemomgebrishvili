@@ -1,14 +1,15 @@
 
-* {
+/* * {
 	margin: 0 auto;
-}
+} es ar gchirdeba, imitom rom am nishnit * kvlea css amateb am property-s tkuila*/ 
 
 #container {
+	margin: 0 auto;
 	margin-top: 10px;
-
 	width: 400px;
 	height: 670px;
-	background-image: url(main.png);
+	background-image: url(../img/main.png); /* es imiji sad aris? consolshi 
+	egreve erorr chans rom ver poulobs*/
 	background-repeat: no-repeat;
 	background-color: black;
 	/*border-top-right-radius: 30px;
@@ -20,7 +21,7 @@
 header {
 	/*border-top-right-radius: 30px;
 	border-top-left-radius: 30px;*/
-	float: left;
+	/* float: left; */
 	width: 100%;
 	height: 30px;
 	margin-top: 30px;
@@ -36,69 +37,75 @@ header {
 	bock ელემენტია და მთლიან სივრცეს დაიკავებს განში */ 
 	/*background-color: black;	*/
 }
-/*#h2_for_title {
-	color: white;
-	text-align: center;
-} */
-/* ან ასე, რახან id გაქვს გამოყეებული იგულისხმება, რომ მეტი id ამ გვერძე აღარ იქნება 
-და შეგძლია h3-სთვის ატრიბუტი აღარ გამოიყენო და პირდაპირ დაუწერო #app-title-ის h3 */
 #app-title h3 {
 	color: white;
 	text-align: center;
 }
 /* ან ასე (ეს უკვე გემოვნების ამბავია)*/
-/*#app-title > h3 { /* #app-title-ის შვილი(>) h3 */
+/*#app-title > h3 { /* #app-title-ის შვილი(>) h3 
 	color: white;
 	text-align: center;
-} */
+} */ /* aq komentars ar xuravdi da sheni main-ic agar mushaobda da ro
+ davxure ai ra moxda webgverdze main gamochnda tavisi mcvane ferit */
 main {
-	float: left;
 	width: 285px;
 	height: 472px;
-	margin-left: 17px;
 	background-color: green;
+	margin: 0 auto;
+}
+main nav ul  {
+	padding: 0px;
 }
 
 main nav ul li {
-	display: inline;
+	/* display: inline; */
 	height: 60px;
 	width: 100%;
 	background-color: black;
-	margin-left: -20px;
-	float: left;
+	list-style: none;
+	/* margin-left: -20px; */
+	/* float: left; */
 	text-align: center;
-	clear: both;
+	/* clear: both; */
 	color: white;
-	float: left;
-	margin-top: 2px;
+	margin: 2px 0;
 }
 main nav {
 	margin-top: 80px;
 }
-main nav ul li:hover {
-	background-color: gray;
+/* es sheidzleba dagainteresos */
+main nav ul li a {
+	background: black;
+	display: block;
+	color: #fff;
+	line-height: 60px; /* madzlevs shesadzleblobas texsti centrshi ganvatavso */
+
+	transition: background, color .7s;
+	-webkit-transition: background, color .7s;
 }
-main nav ul a{
+/* end */
+main nav ul li a:hover {
+	background: gray;
+	color: #000;
+}
+a {
 	text-decoration: none;
-	margin-left: 30%;
 }
-.menu1 a{
+/* .menu1 a {
 	margin-left: 0px;
 	float: left;
 	padding-top: 15px;
 	padding-bottom: 27px;
 	width: 100%;
-}
+} 
 .menu1 a:hover {
 	background-color: gray;
-}
+} */
 
 
 #transport-info {
 	height: 130px;
 	width: 100%;
-	/*float: left; */ /* არ არის საჭირო, სწორედ float-ს, როდესაც ხმარობ ამოაგდებს 
-	ნორმალური დინებიდან ელემენტებს, რომელიც გამოყენებული გაქვს */
 	background-color: #c9fad6; /* დროებით მოხსენი ეს ფერი და  ნახავ 
 	სად არის განთავსებული იმიჯი და float-ს რომ მოხსნი მერე რა ხდება */
 	/*border-bottom: 4px solid black; */
@@ -108,10 +115,10 @@ main nav ul a{
 }
 
 #map-space {
-	background-image: url(map.JPG); /* defaul-თათ როდესაც იმიჯი არ არის 
-	ზუსტად იგივე ზომის repeat-ს აკეთებს, რომელიც უნდა მოხსნა */
-	height: 550px;
+	background: url(../img/map.JPG) no-repeat center center;
+	height: 450px;
 	width: 100%;
+	background-size: cover;
 }
 /*#transport-img {
 	float: left;
@@ -119,35 +126,22 @@ main nav ul a{
 	width: 50px;
 }*/
 #transport-img {
-	/* height: 50px;
-	width: 50px; */ /* მოვხსენი, რადგან ამ div-შივე გიზის ტექსტიც და თან გინდა გვერდზე 
-	განთავსდეს, ამდროს დაწერე რომ 50px განში ჩაეტიოს */
-	/*display: inline-block;  რადგან div დეფაულტათ block ელემენტია, და ვერტიკალურად 
-	მთელ სივრცეს იკავებს */
-	margin-left: 5px;
-	margin-top: 5px;
-	height: 50px;
-	width: 50px;
-	float: left; 
+	margin: 5px 0 0 5px;
 }
 #transport-img img{
 	border: 1px solid;
-	height: 100%;
-	width: 100%;
+	height: 50px;
+	width: 50px;
 }
 /* #info-text {
 	float: left;
 	margin-left: 100px;
 	margin-top: -55px;	
 } */
-#transport-info p { /* ესეც შეგიძლია ასე მიყთითო, #transport-info-ს p თაგს 
-	გინდა მარტო შეეხხოს ეს სტილი */
-	/*display: inline-block;
-	margin-left: 10px;
-	width: 80px; /* თუ კონკრეტულ განში გინდა რომ იყოს განთავსებული */
-	margin-top: 5px;
-	float: left; 
-	/*background-color: red;*/
+#transport-info p { 
+	margin: 5px;
+	display: inline-block;
+	vertical-align: top; /* inine-blockis dros shegidzli gamoikeno*/ 
 }
 span { /* ერთი სპან როცამავს კი შეიძლება :)
 	/* height: 5px;
